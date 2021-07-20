@@ -29,7 +29,7 @@ public class FaqDao extends JDBCTemplate {
 			rs = stmt.executeQuery(sql);
 			System.out.println("04. query 실행 및 리턴");
 			
-			while(rs.next()) {
+			while(rs.next()) { //asd
 				FaqDto faq = new FaqDto();
 				faq.setFaq_no(rs.getInt(1));
 				faq.setFaq_title(rs.getString(2));
