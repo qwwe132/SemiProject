@@ -19,6 +19,7 @@ public class FaqDao extends JDBCTemplate {
 		Statement stmt = null;
 		ResultSet rs = null;
 		List<FaqDto> res = new ArrayList<>();
+		String fre = "";
 		
 		String sql = " SELECT * FROM L_FAQ";
 		
